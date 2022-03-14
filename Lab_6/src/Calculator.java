@@ -6,13 +6,10 @@ public class Calculator {
     private int result;
     private String operator;
 
-    // Constructor to initialize the calculator
     public Calculator() {
-        // Get user input
+        
         Scanner scanCalc = new Scanner(System.in);
-        /**
-         * Continue code here to ask for the first number, the operator, and the second number, IN THAT ORDER
-         */
+       
         System.out.print("Input the first number: ");
         num1 = scanCalc.nextInt();
         
@@ -22,7 +19,8 @@ public class Calculator {
         
         System.out.print("Input the second number: ");
         num2 = scanCalc.nextInt(); 
-        scanCalc.close();
+        
+       
         
         switch(operator) {
         case "+" :
@@ -43,17 +41,8 @@ public class Calculator {
         case "/":
         	
         	System.out.println(divide(num1, num2));
-        	break;
-        	
-        	
-        	
-        	
+        	break;	
         }
-        // Decide on the operation to perform 
-        /**
-         * Insert code to decide on which function to call, based on the operator the user chose
-         * Hint: Switch statement
-         */
     }
 
     public String add(int a, int b) {
